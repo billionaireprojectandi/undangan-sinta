@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * {
+  border: solid 1px red;
+} */
+
+@font-face {
+  font-family: "Kalista";
+  src: url("/font/Kalista.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
