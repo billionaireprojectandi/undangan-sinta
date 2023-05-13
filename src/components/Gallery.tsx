@@ -47,23 +47,27 @@ const Gallery: React.FC<GalleryProps> = (props) => {
   });
   const photos: Photo[] = [
     {
-      url: "/fotomadacompress/fotoCoupleSilat.jpg",
+      url: "/foto-mba-sinta/couple-indoor.jpg",
       alt: "fotoCoupleSilat.jpg",
     },
     {
-      url: "/fotomadacompress/fotoCoupleTerang.jpg",
+      url: "/foto-mba-sinta/cover-depan.jpg",
       alt: "fotoCoupleTerang.jpg",
     },
     {
-      url: "/fotomadacompress/fotoCoupleLandscape.jpg",
+      url: "/foto-mba-sinta/DSC09011_(1).jpg",
       alt: "fotoCoupleLandscape.jpg",
     },
     {
-      url: "/fotomadacompress/fotoCouplegallery.jpg",
+      url: "/foto-mba-sinta/DSC09053_(1).jpg",
       alt: "fotoCouplegallery.jpg",
     },
     {
-      url: "/fotomadacompress/fotoCoupleAdat.jpg",
+      url: "/foto-mba-sinta/DSC09069_(1).jpg",
+      alt: "fotoCoupleAdat.jpg",
+    },
+    {
+      url: "/foto-mba-sinta/couple-outdoor-1.jpg",
       alt: "fotoCoupleAdat.jpg",
     },
   ];
@@ -104,7 +108,9 @@ const Gallery: React.FC<GalleryProps> = (props) => {
             {photos.map((photo, idx) => {
               return (
                 <>
-                  <SlideComp direction={idx % 2 === 0 ? Direction.Right : Direction.Left}>
+                  <SlideComp
+                    direction={idx % 2 === 0 ? Direction.Right : Direction.Left}
+                  >
                     <div
                       className="w-100 border-4 rounded-lg overflow-hidden shadow-sm shadow-secondary"
                       onClick={() => handleShowModal(photo)}

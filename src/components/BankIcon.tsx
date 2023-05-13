@@ -34,8 +34,9 @@ const BankIcon: React.FC<BankIconProps> = (props) => {
   const [copied, setCopied] = useState(false);
 
   const bankArr = {
-    BCA: "8660182421",
-    mandiri: "1180009914325",
+    BCA: "0373575540",
+    BNI: "1462931673",
+    BRI: "307601019192537",
   } as { [key: string]: string };
 
   const handleCopy = (bankName: string) => {
@@ -52,7 +53,10 @@ const BankIcon: React.FC<BankIconProps> = (props) => {
   return (
     <>
       <AnimatePresence>
-        <div key={"bankIcon"} className="fixed top-[75%] left-[85%] w-10 h-10 z-50">
+        <div
+          key={"bankIcon"}
+          className="fixed top-[75%] left-[85%] w-10 h-10 z-50"
+        >
           <SlideComp>
             <div
               className="w-full h-full rounded-md bg-primary border-2 border-secondary animate-wiggle"
@@ -89,8 +93,8 @@ const BankIcon: React.FC<BankIconProps> = (props) => {
               </div>
               <div className="text-xs">
                 <p>
-                  Tanpa mengurangi rasa hormat, bagi anda yang ingin memberikan tanda
-                  kasih untuk kami, dapat melalui:
+                  Tanpa mengurangi rasa hormat, bagi anda yang ingin memberikan
+                  tanda kasih untuk kami, dapat melalui:
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center gap-2">
@@ -98,10 +102,10 @@ const BankIcon: React.FC<BankIconProps> = (props) => {
                   <img className="h-full" src="/png/BCA.png" alt="BCA" />
                 </div>
                 <div className="">
-                  <p>Rosnanda Kusumadawati</p>
+                  <p>Sinta Puji Astuti</p>
                 </div>
                 <div className="text-base">
-                  <p>8660182421</p>
+                  <p>0373575540</p>
                 </div>
                 <div
                   className="p-2 rounded-md bg-primary text-secondary"
@@ -110,23 +114,7 @@ const BankIcon: React.FC<BankIconProps> = (props) => {
                   {!copied ? <p>Salin Rekening</p> : <p>Tersalin</p>}
                 </div>
               </div>
-              <div className="flex flex-col items-center justify-center gap-3">
-                <div className="h-24">
-                  <img className="h-full" src="/png/mandiri.png" alt="BCA" />
-                </div>
-                <div className="">
-                  <p>Rosnanda Kusumadawati</p>
-                </div>
-                <div className="text-base">
-                  <p>1180009914325</p>
-                </div>
-                <div
-                  className="p-2 rounded-md bg-primary text-secondary"
-                  onClick={() => handleCopy("mandiri")}
-                >
-                  {!copied ? <p>Salin Rekening</p> : <p>Tersalin</p>}
-                </div>
-              </div>
+
               <div className="">
                 <p>Terimakasih</p>
               </div>

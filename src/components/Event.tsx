@@ -12,29 +12,6 @@ const Event: React.FC<EventProps> = (props) => {
         id="event"
         className="relative w-full py-10 flex flex-col justify-between items-center bg-primary text-secondary"
       >
-        <SlideComp>
-          <svg
-            id="visual"
-            viewBox="0 0 900 600"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-            version="1.1"
-            className="absolute top-0 left-0"
-          >
-            <path
-              d="M0 72L50 70.8C100 69.7 200 67.3 300 70.3C400 73.3 500 81.7 600 82.5C700 83.3 800 76.7 850 73.3L900 70L900 0L850 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0L0 0Z"
-              fill="#000000"
-            />
-            <path
-              d="M0 63L50 60.7C100 58.3 200 53.7 300 54.2C400 54.7 500 60.3 600 60.8C700 61.3 800 56.7 850 54.3L900 52L900 0L850 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0L0 0Z"
-              fill="#777777"
-            />
-            <path
-              d="M0 25L50 27.2C100 29.3 200 33.7 300 34.5C400 35.3 500 32.7 600 31C700 29.3 800 28.7 850 28.3L900 28L900 0L850 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0L0 0Z"
-              fill="#d2d3d5"
-            />
-          </svg>
-        </SlideComp>
         <div className="relative w-10/12 flex flex-col border-2 rounded-xl z-10">
           <SlideComp>
             <img

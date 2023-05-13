@@ -33,7 +33,7 @@ const CouplePhotoBottom: React.FC<CouplePhotoBottomProps> = (props) => {
           </svg>
           <img
             className="absolute w-full h-full -z-20 object-cover object-bottom"
-            src="/fotomadacompress/fotoCoupleLandscape.jpg"
+            src="/foto-mba-sinta/DSC09053_(1).jpg"
             alt="couple-pick-girl"
           />
           <div className="absolute top-0 left-0 w-full h-full -z-10 object-cover object-bottom">
