@@ -23,7 +23,7 @@ const MusicIcon: React.FC<MusicIconProps> = (props) => {
       <div className="fixed top-[67%] left-[85%] w-10 h-10 z-30">
         <audio
           src="/sound/beautiful_in_white.mp3"
-          autoPlay={false}
+          autoPlay={playing}
           ref={audioRef}
           loop={true}
         />
