@@ -86,7 +86,7 @@ const BankIcon: React.FC<BankIconProps> = (props) => {
               animate="visible"
               exit="hidden"
               ref={bankModal}
-              className="w-[90%] flex flex-col justify-center items-center p-2 rounded-lg border bg-secondary border-white gap-2 text-center text-primary text-sm"
+              className="w-[80%] h-fit flex flex-col justify-center items-center p-2 rounded-lg border bg-secondary border-white gap-2 text-center text-black text-sm"
             >
               <div className="text-4xl font-sans">
                 <p>Love Gift</p>
@@ -97,8 +97,8 @@ const BankIcon: React.FC<BankIconProps> = (props) => {
                   tanda kasih untuk kami, dapat melalui:
                 </p>
               </div>
-              <div className="flex flex-col items-center justify-center gap-2">
-                <div className="h-24">
+              <div className="flex flex-col items-center justify-center gap-1">
+                <div className="h-16">
                   <img className="h-full" src="/png/BCA.png" alt="BCA" />
                 </div>
                 <div className="">
@@ -108,8 +108,42 @@ const BankIcon: React.FC<BankIconProps> = (props) => {
                   <p>0373575540</p>
                 </div>
                 <div
-                  className="p-2 rounded-md bg-primary text-secondary"
+                  className="p-2 rounded-md bg-primary text-black"
                   onClick={() => handleCopy("BCA")}
+                >
+                  {!copied ? <p>Salin Rekening</p> : <p>Tersalin</p>}
+                </div>
+              </div>
+              <div className="flex flex-col items-center justify-center gap-1">
+                <div className="h-16 mb-2">
+                  <img className="h-full" src="/png/bri.png" alt="BRI" />
+                </div>
+                <div className="">
+                  <p>Sinta Puji Astuti</p>
+                </div>
+                <div className="text-base">
+                  <p>307601019192537</p>
+                </div>
+                <div
+                  className="p-2 rounded-md bg-primary text-black"
+                  onClick={() => handleCopy("BRI")}
+                >
+                  {!copied ? <p>Salin Rekening</p> : <p>Tersalin</p>}
+                </div>
+              </div>
+              <div className="flex flex-col items-center justify-center gap-1">
+                <div className="h-10 mb-2">
+                  <img className="h-full" src="/png/bni.png" alt="BNI" />
+                </div>
+                <div className="">
+                  <p>Sinta Puji Astuti</p>
+                </div>
+                <div className="text-base">
+                  <p>1462931673</p>
+                </div>
+                <div
+                  className="p-2 rounded-md bg-primary text-black"
+                  onClick={() => handleCopy("BNI")}
                 >
                   {!copied ? <p>Salin Rekening</p> : <p>Tersalin</p>}
                 </div>

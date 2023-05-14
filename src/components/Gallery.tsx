@@ -98,7 +98,7 @@ const Gallery: React.FC<GalleryProps> = (props) => {
         id="gallery"
         className="relative w-full py-10 flex flex-col justify-between items-center bg-primary"
       >
-        <div className="w-10/12 flex flex-col gap-7 text-center text-secondary">
+        <div className="w-10/12 flex flex-col gap-7 text-center text-black">
           <SlideComp>
             <div className=" font-sans text-5xl">
               <p>Gallery</p>

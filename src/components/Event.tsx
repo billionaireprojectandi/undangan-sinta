@@ -10,7 +10,7 @@ const Event: React.FC<EventProps> = (props) => {
     <>
       <section
         id="event"
-        className="relative w-full py-10 flex flex-col justify-between items-center bg-primary text-secondary"
+        className="relative w-full py-10 flex flex-col justify-between items-center bg-primary text-black"
       >
         <div className="relative w-10/12 flex flex-col border-2 rounded-xl z-10">
           <SlideComp>

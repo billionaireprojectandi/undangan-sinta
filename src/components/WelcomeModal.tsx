@@ -41,7 +41,7 @@ const WelcomeModal: React.FC<WelcomeModalProps> = (props) => {
               alt="couple"
             />
             <div className="absolute w-full h-full flex flex-col items-center justify-center bg-gradient-to-t from-primary font-sans">
-              <div className="w-10/12 flex flex-col justify-center items-center text-secondary">
+              <div className="w-10/12 flex flex-col justify-center items-center text-black">
                 <div className="text-3xl">
                   <h2>The Wedding Of</h2>
                 </div>
@@ -58,7 +58,7 @@ const WelcomeModal: React.FC<WelcomeModalProps> = (props) => {
                   <p>Dear</p>
                 </div>
                 {params && (
-                  <div className="w-10/12 h-24 flex justify-center items-center mt-4 rounded-md bg-white opacity-60 text-primary font-serif">
+                  <div className="w-10/12 h-24 flex justify-center items-center mt-4 rounded-md bg-white opacity-60 text-black font-serif">
                     <p>{params}</p>
                   </div>
                 )}
@@ -69,7 +69,7 @@ const WelcomeModal: React.FC<WelcomeModalProps> = (props) => {
                   </p>
                 </div>
                 <div
-                  className="p-2 mt-4 rounded-md bg-secondary text-sm text-primary font-bold font-serif"
+                  className="p-2 mt-4 rounded-md bg-secondary text-xs text-primary border border-primary font-bold font-serif"
                   onClick={() => props.setShowWelcomeModal(false)}
                 >
                   <p>Buka Undangan</p>

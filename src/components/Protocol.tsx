@@ -8,25 +8,16 @@ type ProtocolProps = {
 const Protocol: React.FC<ProtocolProps> = (props) => {
   return (
     <>
-      <section className="w-full h-full bg-primary text-secondary">
-        <SlideComp class="w-full py-10 flex flex-col justify-between items-center">
-          <div className="w-10/12 flex flex-col text-justify gap-7 text-sm">
-            <div className="text-center">
-              <p>Covid-19 Prevention</p>
-            </div>
-            <div className="text-center text-sm">
-              <p>
-                Jangan ragu untuk datang, kami sudah berkoordinasi dengan pihak lain untuk
-                mencegah penularan COVID-19. Acara kami akan mengikuti segala prosedur
-                protokol kesehatan untuk mencegah penularan COVID-19. So don't be panic,
-                we look forward to seeing you there!
-              </p>
-            </div>
-          </div>
+      <section className="w-full h-full bg-primary text-black">
+        <SlideComp class="w-full flex flex-col justify-between items-center">
           <div className="flex flex-col items-center">
             <p className="text-sm text-center mt-3">By aswebinaja</p>
             <div className="flex mt-3 mx-auto gap-3">
-              <a href="https://wa.me/6283894420949" target="_blank" rel="noreferrer">
+              <a
+                href="https://wa.me/6283894420949"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <svg className="w-8 h-8" viewBox="0 0 24 24">
                   <path
                     fill="currentColor"

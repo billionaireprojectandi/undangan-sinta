@@ -20,7 +20,7 @@ const Maps: React.FC<MapsProps> = (props) => {
         id="maps"
         className="w-full py-10 flex flex-col justify-between items-center bg-primary"
       >
-        <div className="w-10/12 flex flex-col text-center text-secondary">
+        <div className="w-10/12 flex flex-col text-center text-black">
           <SlideComp direction={Direction.Up}>
             <div className="mb-7 font-sans text-5xl">
               <p>Lokasi</p>

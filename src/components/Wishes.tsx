@@ -18,12 +18,15 @@ const Wishes: React.FC<WishesProps> = (props) => {
   const [write, setWrite] = useState(false);
   const { millisecond } = DateTime.now();
   const handleFetch = async () => {
-    const res = await sanity.fetch(`*[_type == "ucapan"] | order(_createdAt desc)`);
+    const res = await sanity.fetch(
+      `*[_type == "ucapan"] | order(_createdAt desc)`
+    );
     setData(res);
   };
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    console.log({ name: e.target.name, value: e.target.value });
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setPesan((pesan) => {
       return {
         ...pesan,
@@ -50,7 +53,7 @@ const Wishes: React.FC<WishesProps> = (props) => {
   }, []);
   return (
     <>
-      <section id="wishes" className="w-full h-full bg-primary text-secondary">
+      <section id="wishes" className="w-full h-full bg-primary text-black">
         <SlideComp
           class="w-full py-10 flex flex-col justify-between items-center"
           direction={Direction.Up}
@@ -65,7 +68,7 @@ const Wishes: React.FC<WishesProps> = (props) => {
                   <label className="text-sm">
                     Pengirim:
                     <input
-                      className="w-full p-2 rounded-lg focus:outline-none bg-secondary text-primary"
+                      className="w-full p-2 rounded-lg focus:outline-none bg-secondary text-black"
                       type="text"
                       name="sender"
                       placeholder="Nama Anda"
@@ -77,7 +80,7 @@ const Wishes: React.FC<WishesProps> = (props) => {
                     <textarea
                       name="pesan"
                       id="wish"
-                      className="w-full p-2 rounded-lg focus:outline-none bg-secondary text-primary"
+                      className="w-full p-2 rounded-lg focus:outline-none bg-secondary text-black"
                       rows={4}
                       placeholder="Berikan Ucapan dan Doa Untuk Kedua Mempelai"
                       onChange={(e) => handleChange(e)}
@@ -92,9 +95,15 @@ const Wishes: React.FC<WishesProps> = (props) => {
                 </div>
               )}
               <div className="w-full h-[80vh] bg-secondary rounded-lg overflow-auto">
-                {data.map((wish) => {
+                {data.map((wish, idx) => {
+                  let bottom = "";
+                  if (idx === data.length - 1) {
+                    bottom = "mb-3";
+                  }
                   return (
-                    <div className="w-11/12 mt-3 mx-auto p-3 flex flex-col gap-2 text-sm rounded-lg bg-primary text-secondary">
+                    <div
+                      className={`w-11/12 mt-3 mx-auto p-3 flex flex-col gap-2 text-sm rounded-lg bg-primary text-black ${bottom}`}
+                    >
                       <p>
                         <strong>{wish.sender}</strong>
                       </p>

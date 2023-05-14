@@ -43,7 +43,7 @@ const Countdown: React.FC<CountdownProps> = (props) => {
           <img className="w-full h-full" src="/png/gunung.png" alt="gunung" />
         </div>
         <div className="h-96 flex flex-col justify-between items-center mb-20 z-10">
-          <div className="w-8/12 h-64 flex flex-col justify-around text-secondary">
+          <div className="w-8/12 h-64 flex flex-col justify-around text-black">
             <SlideComp direction={Direction.Right}>
               <div className="self-start w-full font-sans text-7xl text-left">
                 <h2>Sinta</h2>
@@ -61,7 +61,7 @@ const Countdown: React.FC<CountdownProps> = (props) => {
             </SlideComp>
           </div>
           <SlideComp direction={Direction.Up}>
-            <div className="w-[85vw] md:w-[20rem] h-20 flex justify-around items-center rounded-md text-primary border-2 border-primary bg-secondary font-serif">
+            <div className="w-[85vw] md:w-[20rem] h-20 flex justify-around items-center rounded-md text-black border-4 border-primary bg-secondary font-serif">
               <div className="flex flex-col justify-center items-center">
                 <div>
                   <p>{hari}</p>

@@ -4,7 +4,7 @@ export default sanityClient({
   dataset: "production",
   apiVersion: "2021-10-21",
   useCdn: false,
-  projectId: "s434z30p",
+  projectId: "n1odz8c6",
   token:
-    "skB5qNWAB3ukrCJAOK20pofbvedMiahyMXldsa2IhGcyfpAXcSrAgjGbq0da0v0TFRtmdAWPyy6Dr3H9aB12jTq7uL7gqaokKnYm0nmSB10rIXnMKA0c9xFddgEf0x4VAAdicYkgHr2IaifR1QMl2GSe2FGhXgO7LDsHUCwZU2F35jU0pFpC",
+    "skbMtTg5QZTIdO5uzBuWWCzqROH5UWntduWj1xIdjjERfizgx9Z5GkD28leCyBbgKVREACStyprx9fD7zfx1AFaHqZ9serfo2t6ZfK04KYu3nxEeB7cdp6Ype4msipi1n242r3gzvfsm7JqZv3XfIddKCqgn0arRee3az3MJmzX7oYJp6SP9",
 });

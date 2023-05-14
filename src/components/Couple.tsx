@@ -13,7 +13,7 @@ const Couple: React.FC<CoupleProps> = (props) => {
         className="w-full pt-10 flex flex-col justify-between items-center bg-primary"
       >
         <SlideComp class="w-full">
-          <div className="w-full py-10 flex flex-col items-center gap-7 text-primary bg-secondary rounded-t-full">
+          <div className="w-full py-10 flex flex-col items-center gap-7 text-black bg-secondary rounded-t-full">
             <div className="flex flex-col gap-4 items-center">
               <SlideComp direction={Direction.Left}>
                 <div className="relative w-48 overflow-hidden border-4 rounded-lg rounded-t-full shadow-md">
@@ -37,7 +37,7 @@ const Couple: React.FC<CoupleProps> = (props) => {
                   </div>
                   <div className="text-center text-sm">
                     <div>
-                      <p>Bapak Sugiyono</p>
+                      <p>Bapak Sudiyono</p>
                     </div>
                     <div>
                       <p>Dan</p>
@@ -90,7 +90,7 @@ const Couple: React.FC<CoupleProps> = (props) => {
           </div>
           <svg
             id="visual"
-            viewBox="0 0 900 600"
+            viewBox="0 0 900 50"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             version="1.1"
