@@ -131,7 +131,7 @@ const BankIcon: React.FC<BankIconProps> = (props) => {
                   {!copied ? <p>Salin Rekening</p> : <p>Tersalin</p>}
                 </div>
               </div>
-              <div className="flex flex-col items-center justify-center gap-1">
+              {/* <div className="flex flex-col items-center justify-center gap-1">
                 <div className="h-10 mb-2">
                   <img className="h-full" src="/png/bni.png" alt="BNI" />
                 </div>
@@ -147,7 +147,7 @@ const BankIcon: React.FC<BankIconProps> = (props) => {
                 >
                   {!copied ? <p>Salin Rekening</p> : <p>Tersalin</p>}
                 </div>
-              </div>
+              </div> */}
 
               <div className="">
                 <p>Terimakasih</p>
