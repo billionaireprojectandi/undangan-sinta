@@ -63,7 +63,7 @@ const Gallery: React.FC<GalleryProps> = (props) => {
       alt: "fotoCouplegallery.jpg",
     },
     {
-      url: "/foto-mba-sinta/DSC09069_(1).jpg",
+      url: "/foto-mba-sinta/DSC08448-01.jpg",
       alt: "fotoCoupleAdat.jpg",
     },
     {
@@ -110,6 +110,7 @@ const Gallery: React.FC<GalleryProps> = (props) => {
                 <>
                   <SlideComp
                     direction={idx % 2 === 0 ? Direction.Right : Direction.Left}
+                    key={idx}
                   >
                     <div
                       className="w-100 border-4 rounded-lg overflow-hidden shadow-sm shadow-secondary"
