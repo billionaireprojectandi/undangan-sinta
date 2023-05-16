@@ -55,7 +55,7 @@ const Gallery: React.FC<GalleryProps> = (props) => {
       alt: "fotoCoupleTerang.jpg",
     },
     {
-      url: "/foto-mba-sinta/DSC09011_(1).jpg",
+      url: "/foto-mba-sinta/DSC09069_(1).jpg",
       alt: "fotoCoupleLandscape.jpg",
     },
     {

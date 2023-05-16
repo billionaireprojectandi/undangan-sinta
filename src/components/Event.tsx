@@ -51,7 +51,7 @@ const Event: React.FC<EventProps> = (props) => {
                   <p>Minggu, 18 Juni 2023</p>
                 </div>
                 <div>
-                  <p>12:00 - 14:00 WIB</p>
+                  <p>11:00 - 13:00 WIB</p>
                 </div>
                 <div className="flex flex-col gap-1 text-sm">
                   <p>
